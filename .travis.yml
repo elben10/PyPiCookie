@@ -1,0 +1,31 @@
+matrix:
+  include:
+    - language: python
+      python: 3.7
+      name: Linux
+      os: linux
+      dist: xenial
+      sudo: true
+      cache:
+        directories:
+          - $HOME/.cache/pip
+    - language: generic
+      name: OS X
+      os: osx
+      before_install:
+        - brew update && brew upgrade python3
+        - alias python='python3'
+      before_cache:
+        - brew cleanup
+      cache:
+        directories:
+          - $HOME/.cache/pip
+          - $HOME/Library/Caches/Homebrew
+
+install:
+  - python3 --version
+  - pip3 install -r requirements.txt
+  - pip3 install .
+
+script:
+  - pytest

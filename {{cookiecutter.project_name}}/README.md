@@ -1,0 +1,4 @@
+[![Documentation Status](https://readthedocs.org/projects/{{cookiecutter.github_repository.lower()}}/badge/?version=latest)](https://{{cookiecutter.github_repository}}.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repository}}.svg?branch=master)](https://travis-ci.org/{{cookiecutter.github_user}}/{{cookiecutter.github_repository}})
+[![Build status](https://ci.appveyor.com/api/projects/status/github/{{cookiecutter.github_user}}/{{cookiecutter.github_repository}}?svg=true)](https://ci.appveyor.com/project/{{cookiecutter.github_user}}/{{cookiecutter.github_repository}})
+# {{ cookiecutter.project_name }}

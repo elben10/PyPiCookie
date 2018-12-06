@@ -1,0 +1,6 @@
+click
+m2r
+pytest
+pytest-runner
+sphinx
+sphinx_click
