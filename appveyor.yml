@@ -1,7 +1,7 @@
 # Not a C# project
 build: off
-
-matrix:
+environment:
+  matrix:
    - PYTHON: "C:\\Python37"
 
 install:
